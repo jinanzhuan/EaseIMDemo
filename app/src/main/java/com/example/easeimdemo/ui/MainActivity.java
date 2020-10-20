@@ -29,41 +29,5 @@ public class MainActivity extends BaseActivity {
     @Override
     protected void initData() {
         super.initData();
-        //构建文本消息
-        EMMessage message = EMMessage.createTxtSendMessage("content", "");
-        //发送消息
-        EMClient.getInstance().chatManager().sendMessage(message);
-
-        EMClient.getInstance().chatManager().addMessageListener(new EMMessageListener() {
-            @Override
-            public void onMessageReceived(List<EMMessage> list) {
-
-            }
-
-            @Override
-            public void onCmdMessageReceived(List<EMMessage> list) {
-
-            }
-
-            @Override
-            public void onMessageRead(List<EMMessage> list) {
-
-            }
-
-            @Override
-            public void onMessageDelivered(List<EMMessage> list) {
-
-            }
-
-            @Override
-            public void onMessageRecalled(List<EMMessage> list) {
-
-            }
-
-            @Override
-            public void onMessageChanged(EMMessage emMessage, Object o) {
-
-            }
-        });
     }
 }

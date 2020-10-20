@@ -80,6 +80,7 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
             @Override
             public void onSuccess() {
                 MainActivity.actionStart(LoginActivity.this);
+                finish();
             }
 
             @Override
