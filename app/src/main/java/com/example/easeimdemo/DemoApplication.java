@@ -16,7 +16,8 @@ public class DemoApplication extends Application {
 
     private void initSDK() {
         //di'
-        EMClient.getInstance().init(this, null);
+        EMOptions options = new EMOptions();
+        EMClient.getInstance().init(this, options);
     }
 }
 
