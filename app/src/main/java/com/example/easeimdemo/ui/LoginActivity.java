@@ -56,6 +56,12 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
     @Override
     protected void initData() {
         super.initData();
+        boolean loggedInBefore = EMClient.getInstance().isLoggedInBefore();
+        if(loggedInBefore) {
+            MainActivity.actionStart(mContext);
+            finish();
+            return;
+        }
         if(!TextUtils.isEmpty(username)) {
             et_username.setText(username);
         }
