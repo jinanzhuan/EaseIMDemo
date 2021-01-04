@@ -1,4 +1,2 @@
-include ':player'
-include ':easeui'
 include ':app'
 rootProject.name = "EaseIMDemo"

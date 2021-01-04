@@ -11,8 +11,8 @@ import com.hyphenate.easeui.viewholder.EaseChatRowViewHolder;
 
 public class ChatVideoCallViewHolder extends EaseChatRowViewHolder {
 
-    public ChatVideoCallViewHolder(@NonNull View itemView, MessageListItemClickListener itemClickListener, EaseMessageListItemStyle itemStyle) {
-        super(itemView, itemClickListener, itemStyle);
+    public ChatVideoCallViewHolder(@NonNull View itemView, MessageListItemClickListener itemClickListener) {
+        super(itemView, itemClickListener);
     }
 
     @Override

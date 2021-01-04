@@ -4,7 +4,7 @@ import android.app.Application;
 
 import com.hyphenate.chat.EMClient;
 import com.hyphenate.chat.EMOptions;
-import com.hyphenate.easeui.EaseUI;
+import com.hyphenate.easeui.EaseIM;
 
 public class DemoApplication extends Application {
 
@@ -19,7 +19,8 @@ public class DemoApplication extends Application {
         //第二个参数不可以传入null
         EMOptions options = new EMOptions();
         //替换为EaseUI的init
-        EaseUI.getInstance().init(this, options);
+        EaseIM.getInstance().init(this, options);
+        EMClient.getInstance().setDebugMode(true);
     }
 }
 
